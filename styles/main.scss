@@ -84,7 +84,10 @@ button {
     input:not(#read) {
       display: block;
       margin-top: 2px;
-      
+
+      &:invalid:required {
+        border: 1px solid red;
+      }
     }
   }
   

@@ -95,6 +95,10 @@ button {
   margin-top: 2px;
 }
 
+.book-form > div input:not(#read):invalid:required {
+  border: 1px solid red;
+}
+
 .book-form div:last-of-type {
   display: block;
 }
