@@ -35,9 +35,6 @@ function addBookToLibrary(e) {
 
 function isValid() {
   const form = document.querySelector('.book-form');
-  if (form.title.validity.tooShort) {
-    form.title.setCustomValidity("The title is too short!");
-  }
   return form.checkValidity();
 }
 
