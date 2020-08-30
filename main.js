@@ -25,7 +25,7 @@ function Book(title, author, pages, read, id) {
 
 function addBookToLibrary(e) {
   e.preventDefault();
-  if (!isValid()) return;
+  //if (!isValid()) return;
   
   book = new Book(title.value, author.value, pages.value, read.checked, myLibrary.length);
   myLibrary.push(book);
