@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  padding: 0 40px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+i {
+  font-style: italic;
+}
+
+button {
+  cursor: pointer;
+}
+
+.book-form {
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
+  display: block;
+  overflow: hidden;
+  transition: all 0.7s;
+  height: 0;
+  
+  > div {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+
+    input:not(#read) {
+      display: block;
+      margin-top: 2px;
+      
+    }
+  }
+  
+  div:last-of-type {
+    display: block;
+  }
+
+  button {
+    display: block;
+    margin: 20px 0;
+    background-color: rgb(188, 240, 188);
+    width: 80px;
+    height: 30px;
+    margin-left: 1px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px rgb(112, 165, 112);
+  }
+
+}
+
+#new-book {
+  display: block;
+  margin: 20px 0;
+}
+
+#library {
+
+  #book-list {  
+    article {
+      margin-top: 20px;
+      display: block;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: rgb(188, 240, 188);
+  
+      div.book-info {
+        display: inline-block;
+      }
+  
+      div.book-settings {
+        float: right;
+  
+        button {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.visible {
+  height: 180px;
+  border-bottom: 2px solid rgba(0, 0, 0, 100);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <button id="new-book">NEW BOOK</button>
+  <form class="book-form">
+    <div>
+      <label for="title">Title</label>
+      <input id="title" type="text" name="title" minlength="3" required>
+    </div>
+    <div>
+      <label for="author">Author</label>
+      <input id="author" type="text" name="author" required>
+    </div>
+    <div>
+      <label for="pages">Pages</label>
+      <input id="pages" type="number" name="pages" min="0" value="50">
+    </div>
+    <div>
+      <label for="read">Have you read this book?</label>
+      <input id="read" type="checkbox" name="read">
+    </div>
+    <button id="submit-btn">Add</button>
+  </form>
+  <section id="library">
+    <h1>Library</h1>
+    <section id="book-list">
+    <!--<article>
+      <div class="book-info">
+        <h2>Harry Potter</h2>
+        <p>Author: <i>J.K. Rowling</i></p>
+        <p>Pages: <i>425</i></p>
+        <p>Read: <i>False</i></p>
+      </div>
+      <div class="book-settings">
+        <button id="remove-btn">Remove</button>
+        <div>
+          <label for="read">Read?</label>
+          <input id="read" type="checkbox" name="read">
+        </div>
+      </div>
+    </article>-->
+    </section>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
